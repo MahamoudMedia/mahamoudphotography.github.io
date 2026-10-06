@@ -133,10 +133,8 @@ a,button,input,select,textarea{touch-action:manipulation}
 nav{position:fixed;top:var(--banner-h);left:0;right:0;z-index:300;height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;padding:0 22px;background:rgba(0,0,0,.82);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(255,255,255,.08);transition:top .25s var(--ease)}
 body:has(#banner[hidden]) nav{top:0}
 nav.solid{background:rgba(0,0,0,.92)}
-.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.nav-brand{display:flex;align-items:center;text-decoration:none;min-width:0}
 .nav-brand svg{display:block;width:40px;height:40px;flex:none;background:#f6efe4;border-radius:50%;box-shadow:0 0 0 1px rgba(201,169,110,.7)}
-.nav-brand-name{font-family:var(--display);font-size:17px;font-weight:600;letter-spacing:-.022em;color:#f5f5f7}
-.nav-brand-name span{color:inherit;font-size:inherit;line-height:inherit}
 .nav-links{display:flex;gap:28px;list-style:none;align-items:center}
 .nav-links a{font-size:12px;letter-spacing:-.01em;color:rgba(255,255,255,.86);text-decoration:none}
 .nav-links a:hover{color:#fff}
@@ -512,7 +510,7 @@ section.stage{scroll-margin-top:0}
 
 <!-- NAV -->
 <nav id="navbar">
-  <a href="#hero" class="nav-brand">
+  <a href="#hero" class="nav-brand" aria-label="Mahamoud">
     <svg width="42" height="42" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <circle cx="80" cy="80" r="72" fill="none" stroke="#c9a96e" stroke-width="2" opacity="0.95"/>
       <circle cx="80" cy="80" r="60" fill="none" stroke="#c9a96e" stroke-width="2.5" opacity="0.95"/>
@@ -530,7 +528,6 @@ section.stage{scroll-margin-top:0}
         <polygon points="14,-12 11,-12 0,4 3,4" fill="#c9a96e"/>
       </g>
     </svg>
-    <span class="nav-brand-name">Mahamoud<span>.</span></span>
   </a>
   <ul class="nav-links">
     <li><a href="#portfolio">Portfolio</a></li>
